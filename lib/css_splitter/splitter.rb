@@ -2,7 +2,7 @@ module CssSplitter
 
   class Splitter
 
-    MAX_SELECTORS_DEFAULT = 4095
+    MAX_SELECTORS_DEFAULT = 3000 # decrease from standard 4095 in order to redeem our souls
 
     # returns the specified split of the passed css_string
     def self.split_string(css_string, split = 1, max_selectors = MAX_SELECTORS_DEFAULT)
